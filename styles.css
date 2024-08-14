@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9; /* Light green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container styles */
+.container {
+    background-color: #ffffff; /* White background for content */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    width: 90%;
+    max-width: 800px; /* Max width to keep the content centered */
+    margin: 20px;
+}
+
+/* Header styles */
+h1, h2 {
+    color: #388e3c; /* Darker green for headings */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Space evenly */
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White text color for links */
+    background-color: #388e3c; /* Green background for links */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #388e3c; /* Darker green for labels */
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px; /* Max width for input fields */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #388e3c; /* Green background for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+}
+
+/* Response and table styles */
+#response, #sensorData {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #d32f2f; /* Red color for error messages */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; /* White background for table */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd; /* Light gray border */
+    text-align: left;
+}
+
+th {
+    background-color: #388e3c; /* Green background for table headers */
+    color: white; /* White text color for table headers */
+}
+
+/* Add specific styles for the LuxValue column */
+td:nth-child(4) {
+    color: #d32f2f; /* Red text for LuxValue column */
+    font-weight: bold;
+}
+
+/* Ensure proper styling for the new column */
+th:nth-child(4) {
+    background-color: #2e7d32; /* Darker green for the LuxValue column header */
+    color: white; /* White text color for the LuxValue column header */
+}
+
+#videoFeed img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners for images */
+}
